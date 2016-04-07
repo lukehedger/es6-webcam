@@ -1,0 +1,26 @@
+{
+  "name": "es6-webcam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node server.js",
+    "build": "NODE_ENV=production webpack --config ./webpack/prod.config.js --progress --profile --colors"
+  },
+  "author": "Luke Hedger <luke.hedger@gmail.com> (http://www.level-out.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "domready": "^1.0.8",
+    "webrtc-adapter-test": "^0.2.8"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.0",
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "express": "^4.13.3",
+    "webpack": "^1.12.11",
+    "webpack-dev-middleware": "^1.4.0",
+    "webpack-hot-middleware": "^2.6.0"
+  }
+}
